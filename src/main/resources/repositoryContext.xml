@@ -9,6 +9,8 @@
 
     <context:component-scan base-package = "repository"/>
 
+    <bean class = "infrastructure.BenchmarkPostProcessor"/>
+
     <bean name = "pizzaRepository"
           class = "repository.InMemPizzaRepository" >
         <property name="pizzas">
